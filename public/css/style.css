@@ -1,0 +1,173 @@
+/* General reset */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	color: #000;
+	background: #fff;
+	font: 12px/1 'Open Sans', arial, helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+img {
+	border: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul{	
+	list-style: none;
+	/*padding: 0;*/
+}
+input, select, textarea, button{
+	outline: none;
+	border: none;
+}
+.form-control:focus{
+	border: 1px solid #bc2336;
+}
+textarea{
+	resize: vertical;
+}
+button, input[type="submit"]{
+	cursor: pointer;
+}
+
+header, footer{
+	height: 150px;
+	background: lightseagreen;	
+}
+
+header .flex-container{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo a img{	
+	height: 150px;
+	
+}
+.flex-container{
+	display:flex;
+	flex-direction: row;
+}
+
+.sidebar{
+	width: 40%;
+	min-height: 600px;
+	background: aquamarine;
+	padding: 20px;
+}
+
+#heating{
+	font-size: 20px;
+	width: 100px;
+}
+
+input[type="button"]{
+	font-size: 20px;
+	background: lightseagreen;
+}
+
+#capture{
+    display: none;
+}
+
+.list li{	
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.list li+li{
+	margin-top: 20px;
+}
+
+#create-form{
+	margin-bottom: 20px;
+}
+
+.name{	
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;        
+}
+
+.update-button, .delete-button, #create{
+	background: lightseagreen;
+	margin-left: 10px;
+}
+
+#get-button{
+	margin-top: 25px;
+	margin-left: 0px;
+	background: lightseagreen;
+}
+
+.content{
+	float: left;
+	width: 60%;
+	min-height: 600px;
+	background: gainsboro;	
+}
+
+.term{
+	display: inline-block;
+	width: 150px;
+	height: 450px;
+	margin-top: 20px;	
+	vertical-align: middle;	
+}
+
+.main_photo{
+	margin-left: 30px;
+	margin-top: 30px;
+	vertical-align: middle;	
+}
+
+.Op-1{
+	background-image: url(../img/term_2.png);
+}
+.Op-2{
+	background-image: url(../img/term_3.png);
+}
+.Op-3{
+	background-image: url(../img/term_4.png);
+}
+input[type="text"]{
+	color: black;
+}
+
+@media (max-width: 1180px) {
+	.main_photo{
+		margin-left: 0px;
+	}
+}
+@media (max-width: 1090px) {
+  	.flex-container{
+  		flex-direction: column;
+ 	 }
+	.sidebar{
+		width: 100%;
+		min-height: 400px;
+	}
+	.content{
+		width: 100%;
+		text-align: center;
+		min-height: 400px;
+	}
+}

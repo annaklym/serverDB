@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport",content="width=device-width, initial-scale=1.0">
+    <title>Smart Bed</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="logo">
+                <a href="index.html"> <img src="img/logo.png" alt=""> </a>
+            </div>
+            <div class="name">Super smart bed</div>
+        </div>
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="sidebar">
+                <ul class="list">
+                    <li>Change the temperature mode
+                        <form action="/mode" method="POST">
+                            <select name="heating" id="heating">
+                                <option value=1>cool</option>
+                                <option value=2>middle</option>
+                                <option value=3>hot</option>
+                            </select>
+                            <input type="button" value="Save Changes" id="SaveTemp">
+                            <!-- <button type="submit">Save Changes</button> -->
+                        </form>
+                    </li>
+                    <li>Фича 2</li>
+                    <li>Фича 3</li>
+                    <li>Фича 4</li>
+                </ul>
+            </div>
+            <div class="content"> 
+                <img class="main_photo" src="img/bed_simple.png" alt=""> 
+                <div class="term"></div>                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex-container"> </div>        
+    </footer>
+
+    <script src = "js/plugin.js"></script>
+</body>
+
+</html>

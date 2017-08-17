@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title=title
+    link(rel='stylesheet', href='css/style.css')
+  body
+    header
+      .flex-container
+        .logo
+          a(href='index.html')
+            img(src='img/logo.png', alt='')
+        .name=somevar
+     
+    main
+      .flex-container
+        .sidebar
+          ul.list
+            li
+              | Heating
+              form(action='/', method='POST')
+                select#heating(name='heating')
+                  option(value='1') cool
+                  option(value='2') middle
+                  option(value='3') hot
+                button(type='submit') Сохранить изменения
+            li Фича 2
+            li Фича 3
+            li Фича 4
+        .content
+        
+            
+          img.main_photo(src='img/bed_simple.jpg', alt='')
+          img.heat_photo(src='img/thermometer.png', alt='' )
+          
+          
+
+          
+          
+    footer
+      .flex-container
+    script.
+      if (1==1)
+        console.log(somevar)
+    script(src='js/plugin.js')
+//.name Super smart bed
+    if somevar==1
+      console.log("Cool!")
+
+
+
